@@ -5,8 +5,8 @@ import logo from '../../assets/globalai.png'
 const Header = () => {
   return (
     <div className="header">
-      <a href="/" className="logo">
-        <img src={logo} alt="" />
+      <a href="/">
+        <img className="logo" src={logo} alt="" />
       </a>
       <div className="header-title">
         <h1>Courses</h1>
