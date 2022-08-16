@@ -4,7 +4,7 @@ import Courses from './components/Courses'
 
 function App() {
   return (
-    <div>
+    <div className=' container'>
       <Courses />
     </div>
   )
