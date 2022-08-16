@@ -12,12 +12,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   max-width: 100%;
-  border: 1px solid red;
+
   margin: 20px 20px;
 }
 .tabs-label {
   padding: 10px 16px;
   cursor: pointer;
+  color: aliceblue;
 }
 .tabs-radio {
   display: none;
@@ -38,85 +39,47 @@ body {
 .tabs-radio:checked + .tabs-label + .tabs-content {
   display: initial;
 }
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /* grid-template-rows: repeat(3, 100px); */
-
-  justify-items: center;
-}
-/* .content {
-  justify-content: center;
+/* .course-card {
+  height: 400px;
+  background: #e1f1dd;
+  color: black;
+  padding: 5px;
+  border-radius: 3px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-items: center;
-} */
-
-/* .wrapper {
-  max-width: 50rem;
-  width: 100%;
-  margin: 0 auto;
+  justify-content: space-evenly;
+  margin: 10px;
+  box-shadow: 8px 8px 5px black;
 }
-.tabs {
-  position: relative;
-  margin: 3rem 0;
-  background: #1abc9c;
-  height: 14.75rem;
+.course-card:hover {
+  box-shadow: none;
+  transition: all 0.3s ease-in;
 }
-.tabs::before,
-.tabs::after {
-  content: "";
-  display: table;
+.course-img {
+  height: 100px;
+  border-radius: 10px;
 }
-.tabs::after {
-  clear: both;
+.course-title {
+  font-size: 1.5rem;
+  text-align: center;
 }
-.tab {
-  float: left;
-}
-.tab-switch {
-  display: none;
-}
-.tab-label {
-  position: relative;
-  display: block;
-  line-height: 2.75em;
-  height: 3em;
-  padding: 0 1.618em;
-  background: #1abc9c;
-  border-right: 0.125rem solid #16a085;
-  color: #fff;
+.more-btn {
+  background-color: #00adb5;
+  padding: 5px;
+  outline: none;
+  height: 2rem;
+  border: none;
+  margin: 10px;
+  border-radius: 3px;
   cursor: pointer;
-  top: 0;
-  transition: all 0.25s;
 }
-.tab-label:hover {
-  top: -0.25rem;
-  transition: top 0.25s;
-}
-.tab-content {
-  height: 12rem;
-  position: absolute;
-  z-index: 1;
-  top: 2.75em;
-  left: 0;
-  padding: 1.618rem;
-  background: #fff;
-  color: #2c3e50;
-  border-bottom: 0.25rem solid #bdc3c7;
-  opacity: 0;
-  transition: all 0.35s;
-}
-.tab-switch:checked + .tab-label {
-  background: #fff;
-  color: #2c3e50;
-  border-bottom: 0;
-  border-right: 0.125rem solid #fff;
-  transition: all 0.35s;
-  z-index: 1;
-  top: -0.0625rem;
-}
-.tab-switch:checked + label + .tab-content {
-  z-index: 2;
-  opacity: 1;
-  transition: all 0.35s;
-} */
+.course-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  /* background: #E1F1DD; */
+/* height: fit-content; */
+/* padding: 5px; */

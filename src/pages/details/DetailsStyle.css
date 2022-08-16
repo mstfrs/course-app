@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: black;
+}
+
+.details-container {
+  width: 800px;
+  margin: 30px auto;
+  box-shadow: 8px 8px 5px black;
+  background: #e1f1dd;
+  border-radius: 3px;
+  padding: 10px;
+}
+.details-container:hover {
+  box-shadow: none;
+  transition: all 0.3s ease-in;
+}
+.course-image {
+  width: 100%;
+}
+.description {
+  font-size: 2rem;
+  color: black;
+  margin: 1rem;
+}
+.title {
+  color: brown;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  text-align: end;
+}
