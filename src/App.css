@@ -1,4 +1,10 @@
+@import url('http://fonts.cdnfonts.com/css/caviar-dreams');
+
+*{
+  font-family: 'Caviar Dreams';
+}
 /* .App {
+
   text-align: center;
 }
 

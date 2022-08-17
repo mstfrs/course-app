@@ -6,10 +6,10 @@ import { useNavigate } from 'react-router-dom'
 export const Cards = ({ course, tabid }) => {
   // const { card_image, id, title, description } = course
 
-  console.log(tabid)
+  
   let navigate = useNavigate()
   const moreClick = () => {
-    navigate('/details', { state: { course } })
+    navigate('/details', { state: { course,tabid } })
   }
 
   var tabstatement
