@@ -7,10 +7,9 @@ export const Cards = ({ course, tabid }) => {
   // const { card_image, id, title, description } = course
   console.log(course.card_image)
 
-  
   let navigate = useNavigate()
   const moreClick = () => {
-    navigate('/details', { state: { course,tabid } })
+    navigate('/details', { state: { course, tabid } })
   }
 
   var tabstatement
@@ -36,8 +35,5 @@ export const Cards = ({ course, tabid }) => {
     )
   }
 
-  const imagelink =
-    'https://globalaihub.com/wp-content/uploads/2021/10/kurs-gorsellerieinzelhandel2-624x330.png'
-  //   console.log(card_image)
   return <>{tabstatement}</>
 }

@@ -1,8 +1,9 @@
 import './App.css'
-import Courses from './components/Courses'
+
 import Approuter from './router/Approuter'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
+import Courses from './pages/courses/Courses'
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <Approuter>
         <Courses />
       </Approuter>
-      <Footer/>
+      <Footer />
     </div>
   )
 }

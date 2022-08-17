@@ -41,5 +41,6 @@
   justify-content: center;
   /* background: #E1F1DD; */
   height: fit-content;
-  /* padding: 5px; */
+  padding-bottom: 30px;
+  margin-bottom: 5px;
 }

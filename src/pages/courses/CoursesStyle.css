@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans";
+  background: #2c3e50;
+  color: #ecf0f1;
+  line-height: 1.618em;
+  /* margin: 50px; */
+}
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+
+  margin: 20px 20px;
+}
+.tabs-label {
+  padding: 10px 16px;
+  cursor: pointer;
+  color: aliceblue;
+}
+.tabs-radio {
+  display: none;
+}
+.tabs-content {
+  order: 1;
+  width: 100%;
+  border-bottom: 3px solid #dddddd;
+  line-height: 1.5;
+  font-size: 0.9em;
+  display: none;
+}
+.tabs-radio:checked + .tabs-label {
+  font-weight: bold;
+  color: 009578;
+  border-bottom: 2px solid #009578;
+}
+.tabs-radio:checked + .tabs-label + .tabs-content {
+  display: initial;
+}

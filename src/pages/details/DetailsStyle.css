@@ -9,11 +9,11 @@ body {
 
 .details-container {
   width: 800px;
-  margin: 30px auto;
+  margin: 30px auto 50px auto;
   box-shadow: 8px 8px 5px black;
   background: #e1f1dd;
   border-radius: 3px;
-  padding: 10px;
+  padding: 30px;
 }
 .details-container:hover {
   box-shadow: none;
@@ -36,15 +36,14 @@ a {
   text-align: end;
 }
 
-
-  ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
 }
 h4 {
   display: block;
@@ -61,35 +60,31 @@ p {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
-.details-container  img{
+.details-container img {
   width: 100%;
   aspect-ratio: auto 869 / 1024;
   height: auto;
 }
 
-/* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {
-  
   .details-container {
     width: 500px;
-    margin: 5px auto;
+
+    margin: 30px auto 50px auto;
     box-shadow: 8px 8px 5px black;
     background: #e1f1dd;
     border-radius: 3px;
-    padding: 5px;
-}
-  
+    padding: 30px;
+  }
 }
 
-/* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 600px) {
-  
   .details-container {
     width: 300px;
-    margin: 3px auto;
+    margin: 30px auto 50px auto;
     box-shadow: 8px 8px 5px black;
     background: #e1f1dd;
     border-radius: 3px;
-    padding: 5px;
-}
+    padding: 30px;
+  }
 }
