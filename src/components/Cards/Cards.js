@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom'
 
 export const Cards = ({ course, tabid }) => {
   // const { card_image, id, title, description } = course
+  console.log(course.card_image)
 
   
   let navigate = useNavigate()
