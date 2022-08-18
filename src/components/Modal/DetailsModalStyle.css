@@ -66,6 +66,65 @@ p {
   height: auto;
 }
 
+.Modal {
+  position: absolute;
+
+  justify-content: center;
+  align-items: center;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  width: 940px;
+  background-color: #637086;
+  overflow: auto;
+  padding-top: 20px;
+
+  margin: auto;
+}
+.Modal > i {
+  height: 100px;
+  margin: 10px;
+  cursor: pointer;
+  float: right;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+.modal-btn {
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: block;
+  font-family: "Amazon Ember", sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  margin: 20px auto;
+
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  width: 100px;
+}
+
+.modal-btn:hover {
+  background-color: #f7fafa;
+}
+
+.modal-btn:focus {
+  border-color: #008296;
+  box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+  outline: 0;
+}
+
 @media screen and (max-width: 992px) {
   .details-container {
     width: 500px;
@@ -75,6 +134,22 @@ p {
     background: #e1f1dd;
     border-radius: 3px;
     padding: 30px;
+  }
+  .Modal {
+    position: absolute;
+
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    width: 590px;
+    background-color: #637086;
+    overflow: auto;
+    padding-top: 20px;
+
+    margin: auto;
   }
 }
 
@@ -86,5 +161,21 @@ p {
     background: #e1f1dd;
     border-radius: 3px;
     padding: 30px;
+  }
+  .Modal {
+    position: absolute;
+
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    width: 360px;
+    background-color: #637086;
+    overflow: auto;
+    padding-top: 20px;
+
+    margin: auto;
   }
 }

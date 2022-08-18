@@ -6,7 +6,6 @@ import parse from 'html-react-parser'
 
 const Details = (props) => {
   const location = useLocation()
-  console.log(location.state)
 
   var tabstatement
   if (location.state.tabid === 'mycourse-tab' || location.state.tabid === '') {

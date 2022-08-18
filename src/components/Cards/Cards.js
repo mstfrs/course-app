@@ -5,11 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import ModalContext from '../../context/ModalContext'
 
 export const Cards = ({ course, tabid }) => {
-  // const { card_image, id, title, description } = course
-  // console.log(course.card_image)
-
-  const { isModalOpen, setIsModalOpen } = useContext(ModalContext)
-  console.log(tabid)
+  const { setIsModalOpen } = useContext(ModalContext)
   let navigate = useNavigate()
   const moreClick = () => {
     navigate('/', { state: { course, tabid } })

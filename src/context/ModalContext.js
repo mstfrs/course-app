@@ -4,7 +4,6 @@ const ModalContext = createContext()
 
 export const ModalProvider = ({ children }) => {
   const [isModalOpen, setIsModalOpen] = useState(false)
-  //   const [tabid, setTabid] = useState('mycourse-tab')
 
   const values = {
     isModalOpen,

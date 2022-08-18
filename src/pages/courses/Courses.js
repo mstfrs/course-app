@@ -11,7 +11,7 @@ const Courses = () => {
   const [allCourses, setAllCourses] = useState()
   const [loading, setLoading] = useState(false)
   const [tabid, setTabid] = useState('mycourse-tab')
-  const { isModalOpen, setIsModalOpen } = useContext(ModalContext)
+  const { isModalOpen } = useContext(ModalContext)
 
   const mycourseurl =
     'https://40060bec-d8e7-4ad2-96c2-63b9fdb4ef24.mock.pstmn.io/wp-json/ldlms/v2/my_courses'
@@ -54,7 +54,6 @@ const Courses = () => {
             name="course-tabs"
             id="mycourse-tab"
             defaultChecked
-            // onChange={handleClick}
             onClick={handleClick}
           />
           <label htmlFor="mycourse-tab" className="tabs-label">

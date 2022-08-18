@@ -8,7 +8,6 @@ import './DetailsModalStyle.css'
 
 const DetailsModal = (props) => {
   const location = useLocation()
-  console.log(location)
 
   const { isModalOpen, setIsModalOpen } = useContext(ModalContext)
 
@@ -42,34 +41,23 @@ const DetailsModal = (props) => {
       <Modal
         isOpen={isModalOpen}
         onRequestClose={() => setIsModalOpen(false)}
-        style={{
-          overlay: {
-            position: 'fixed',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            backgroundColor: 'rgba(255, 255, 255, 0.75)',
-          },
-          content: {
-            position: 'absolute',
-            top: '40px',
-            left: '40px',
-            right: '40px',
-            bottom: '40px',
-            border: '1px solid #ccc',
-            background: '#fff',
-            overflow: 'auto',
-            WebkitOverflowScrolling: 'touch',
-            borderRadius: '4px',
-            outline: 'none',
-            padding: '20px',
-          },
-        }}
+        className="Modal overlayAnimationIn: 'customEnterOverlayAnimation',
+          overlayAnimationOut: 'customLeaveOverlayAnimation',
+          modalAnimationIn: 'customEnterModalAnimation',
+          modalAnimationOut: 'customLeaveModalAnimation',"
+        overlayClassName="Overlay"
+        contentClassName="Content"
       >
-        <button onClick={() => setIsModalOpen(false)}>Close</button>
-        <h1>Modal Title</h1>
+        <i
+          className="fa fa-times fa-2x"
+          aria-hidden="true"
+          onClick={() => setIsModalOpen(false)}
+        ></i>
+
         {tabstatement}
+        <button className="modal-btn" onClick={() => setIsModalOpen(false)}>
+          Close
+        </button>
       </Modal>
     </>
   )
