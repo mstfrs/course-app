@@ -1,5 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import DetailsModal from '../components/Modal/DetailsModal'
+import ModalContext from '../context/ModalContext'
 import Courses from '../pages/courses/Courses'
 
 import Details from '../pages/details/Details'
@@ -11,7 +13,7 @@ const Approuter = () => {
         <Route>
           <Route path="/" element={<Courses />} />
 
-          <Route path="/details" element={<Details />} />
+          {/* <Route path="/modal" element={<DetailsModal />} /> */}
         </Route>
       </Routes>
     </BrowserRouter>

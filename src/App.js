@@ -4,14 +4,17 @@ import Approuter from './router/Approuter'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Courses from './pages/courses/Courses'
+import { ModalProvider } from './context/ModalContext'
 
 function App() {
   return (
     <div className=" container">
       <Header />
-      <Approuter>
-        <Courses />
-      </Approuter>
+      <ModalProvider>
+        <Approuter>
+          <Courses />
+        </Approuter>
+      </ModalProvider>
       <Footer />
     </div>
   )

@@ -1,15 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './CardsStyle.css'
 import logo from '../../assets/globalai.png'
 import { useNavigate } from 'react-router-dom'
+import ModalContext from '../../context/ModalContext'
 
 export const Cards = ({ course, tabid }) => {
   // const { card_image, id, title, description } = course
-  console.log(course.card_image)
+  // console.log(course.card_image)
 
+  const { isModalOpen, setIsModalOpen } = useContext(ModalContext)
+  console.log(tabid)
   let navigate = useNavigate()
   const moreClick = () => {
-    navigate('/details', { state: { course, tabid } })
+    navigate('/', { state: { course, tabid } })
+    setIsModalOpen(true)
   }
 
   var tabstatement
