@@ -8,12 +8,17 @@ import './DetailsModalStyle.css'
 
 const DetailsModal = (props) => {
   const location = useLocation()
+  console.log(location)
+  
 
   const { isModalOpen, setIsModalOpen } = useContext(ModalContext)
-
-  var tabstatement
+   
+  
+   if (location.state !==null) {
+    
+   var tabstatement
   if (location.state.tabid === 'mycourse-tab' || location.state.tabid === '') {
-    tabstatement = location.state ? (
+    tabstatement = (
       <div className="details-container">
         <img className="course-image" src={logo} alt="" />
         <h1 className="title">{location.state.course.title.toUpperCase()}</h1>
@@ -23,8 +28,8 @@ const DetailsModal = (props) => {
         <a href={location.state.course.link}>
           <h3 className="details-link">Course Details</h3>
         </a>
-      </div>
-    ) : null
+      </div>)
+    
   } else if (location.state.tabid === 'allcourse-tab') {
     tabstatement = (
       <div className="details-container">
@@ -34,6 +39,9 @@ const DetailsModal = (props) => {
       </div>
     )
   }
+}
+
+  
 
   Modal.setAppElement('#root')
   return (
