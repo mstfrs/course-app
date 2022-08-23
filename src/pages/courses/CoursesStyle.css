@@ -39,3 +39,182 @@ body {
 .tabs-radio:checked + .tabs-label + .tabs-content {
   display: initial;
 }
+
+
+
+/*Modal css*/
+
+
+.details-container {
+  width: 800px;
+  color: black;
+  margin: 30px auto 50px auto;
+  box-shadow: 8px 8px 5px black;
+  background: #e1f1dd;
+  border-radius: 3px;
+  padding: 30px;
+}
+.details-container:hover {
+  box-shadow: none;
+  transition: all 0.3s ease-in;
+}
+.course-image {
+  width: 100%;
+}
+.description {
+  font-size: 2rem;
+  color: black;
+  margin: 1rem;
+}
+.title {
+  color: brown;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  text-align: end;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+h4 {
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.details-container img {
+  width: 100%;
+  aspect-ratio: auto 869 / 1024;
+  height: auto;
+}
+
+.Modal {
+  position: absolute;
+
+  justify-content: center;
+  align-items: center;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  width: 940px;
+  background-color: #637086;
+  overflow: auto;
+  padding-top: 20px;
+
+  margin: auto;
+}
+.Modal > i {
+  height: 100px;
+  margin: 10px;
+  cursor: pointer;
+  float: right;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+.modal-btn {
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: block;
+  font-family: "Amazon Ember", sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  margin: 20px auto;
+
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  width: 100px;
+}
+
+.modal-btn:hover {
+  background-color: #f7fafa;
+}
+
+.modal-btn:focus {
+  border-color: #008296;
+  box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+  outline: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .details-container {
+    width: 500px;
+
+    margin: 30px auto 50px auto;
+    box-shadow: 8px 8px 5px black;
+    background: #e1f1dd;
+    border-radius: 3px;
+    padding: 30px;
+  }
+  .Modal {
+    position: absolute;
+
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    width: 590px;
+    background-color: #637086;
+    overflow: auto;
+    padding-top: 20px;
+
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .details-container {
+    width: 300px;
+    margin: 30px auto 50px auto;
+    box-shadow: 8px 8px 5px black;
+    background: #e1f1dd;
+    border-radius: 3px;
+    padding: 30px;
+  }
+  .Modal {
+    position: absolute;
+
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    width: 360px;
+    background-color: #637086;
+    overflow: auto;
+    padding-top: 20px;
+
+    margin: auto;
+  }
+}
